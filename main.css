@@ -133,11 +133,12 @@ nav#nav-mobile {
 	width: 100px;
 	height: 100px;
 
+} 
+
+#name {
+	margin-left: 10px;
 }
 
-#links {
-
-}
 }
 
 #content{
@@ -165,7 +166,7 @@ nav#nav-mobile {
 }
 
 #about-pic img {
-	max-width: 960px;
+	max-width: 100%;
 	margin-top: -50px;
 }
 
@@ -173,6 +174,7 @@ nav#nav-mobile {
 	float: left;
 	width: 65%;
 	padding-right: 10px;
+	margin-top: -40px;
 }
 
 #pic {
@@ -194,7 +196,6 @@ nav#nav-mobile {
 
 
 #links i {
-	padding-right: 5px;
 }
 
 #links a {
