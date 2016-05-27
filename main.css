@@ -1,3 +1,6 @@
+/* MAIN.CSS for augustridemark.com */
+/* Author: August Ridemark         */
+
 html {
 	font-family: 'Roboto', sans-serif;
 	color: #eee;
@@ -141,6 +144,8 @@ nav#nav-mobile {
 
 }
 
+/* Main page content styles 
+-------------------------------------------------------------- */
 #content{
 	margin-top:150px;
 	margin-bottom: 150px;
@@ -186,7 +191,6 @@ nav#nav-mobile {
 	max-width: 200px;
 	max-height: 200px;
 	border-radius: 50%;
-
 }
 
 #links {
@@ -206,15 +210,10 @@ nav#nav-mobile {
 	color: #fb4f4f;
 }
 
-footer {
-	width: 100%;
-	min-height: 30px;
-	position: fixed;
-	bottom: 0;
-	padding: 10px 10px;
+#about-pic span {
+	font-size: 0.5em;
 }
 
-footer a {
-	color: #eee;
+#about-me, #sources {
+	font-size: 0.9em;
 }
-

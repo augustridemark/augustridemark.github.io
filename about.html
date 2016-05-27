@@ -3,14 +3,25 @@
 
 	<head>
         <title> August Ridemark - About </title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal website for August Ridemark">
+        <meta name="keywords" content="August,Ridemark,Stockholm,Sweden,CS,Computers,Science,Tech,Developer,Programmer,Coder">
+        <meta name="author" content="August Ridemark">
+
+        <!-- Main stylesheet -->
         <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <!-- Fontello stylesheet for Fontawesome icons -->
         <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" media="screen">
-        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <!-- Google Fonts and jQuery CDN -->
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+        <!-- Mobile menu script for small screens -->
         <script type="text/javascript">
             $(document).ready(function(){
                 $("#nav-mobile").html($("#nav-main").html());
@@ -19,31 +30,37 @@
                         $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
                     } else {
                         $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-        }
-    });
-});
+                    }
+                });
+            });
         </script>
                 
     </head>
 
 <body>
+
+<!-- Header with name and menu -->
 <header>
     <a href="index.html"><div id="name"> AUGUST RIDEMARK </div></a>
+    <!-- Normal menu -->
     <nav id="nav-main">
     <ul>
         <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
     </ul>
     </nav>
+    <!-- Mobile menu -->
     <div id="nav-trigger">
-        <span>&#9776;</span>
+        <span><i class="material-icons">menu</i></span>
     </div>
     <nav id="nav-mobile"></nav>
 </header>
 
+<!-- Main page content -->
 <div id="content">
     <div id="about-pic">
         <img src="mt-kili.png"><img>
+        <span>Mt. Kilimanjaro as seen from Amboseli National Park. Photo by me.<span>
     </div>
     <div id="about-me">
         <p>I've always had an interest in computers and technology. When I was in high school I got my first taste of code and programming through web development and I've been hooked ever since.</p>
@@ -52,6 +69,7 @@
         <p>My CV is available online through Google Drive in Swedish and English. If you have any further questions feel free to contact me at: <a href="mailto:august.ridemark@gmail.com">august.ridemark@gmail.com</a>.</p>
         <a href="https://drive.google.com/file/d/0BxfXTnGe7H2pMUw1ZXR0cWpBRUE/view?usp=sharing"><h3>Swedish CV</h3></a> <a href="#"><h3>English CV</h3></a>
     </div>
+    <hr>
     <div id="sources">
         Site built by August Ridemark. Icons by <a href="http://fontawesome.io">Fontawesome</a>. Font used is Roboto by Christian Robertson through <a href="https://www.google.com/fonts/specimen/Roboto">Google Fonts</a>.
     </div>
