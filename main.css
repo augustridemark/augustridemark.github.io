@@ -120,30 +120,6 @@ nav#nav-mobile a {
 }
 
 
-/* =Media Queries
--------------------------------------------------------------- */
-@media all and (max-width: 680px) {
-#nav-trigger {
-    display: block; }
-
-nav#nav-main {
-    display: none; }
-
-nav#nav-mobile {
-    display: block; }
-
-#pic img {
-	width: 100px;
-	height: 100px;
-
-} 
-
-#name {
-	margin-left: 10px;
-}
-
-}
-
 /* Main page content styles 
 -------------------------------------------------------------- */
 #content{
@@ -188,9 +164,13 @@ nav#nav-mobile {
 }
 
 #pic img {
-	max-width: 200px;
-	max-height: 200px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
+}
+
+#pic img:hover {
+
 }
 
 #links {
@@ -217,3 +197,87 @@ nav#nav-mobile {
 #about-me, #sources {
 	font-size: 0.9em;
 }
+
+
+/* Projects.html style            */
+
+
+#pagewrap {
+	width: 960px;
+	font-size: 0.7em;
+}
+
+#grid{
+	width: 30%;
+	float: left;
+	padding: 0 10px 10px 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border: 1px solid #fb4f4f;
+}
+
+#grid a:hover {
+	text-transform: none;
+	text-decoration: underline;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#grid{
+		width: 45%;
+		padding: 0 10px 10px 10px;
+	}
+	
+	#name {
+	margin-left: 10px;
+}
+
+	
+}
+
+/* for 700px or less */
+@media screen and (max-width: 720px) {
+
+	#grid {
+		width: auto;
+		float: none;
+	}
+
+}
+
+@media all and (max-width: 680px) {
+#nav-trigger {
+    display: block; }
+
+nav#nav-main {
+    display: none; }
+
+nav#nav-mobile {
+    display: block; }
+
+#pic img {
+	width: 150px;
+	height: 150px;
+
+} 
+
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	#pic img {
+	width: 100px;
+	height: 100px;
+
+} 
+	
+}
+
