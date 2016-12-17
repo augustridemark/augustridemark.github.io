@@ -1,0 +1,63 @@
+<!doctype hmtl>
+<html>
+
+	<head>
+        <title> August Ridemark - Lost </title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal website for August Ridemark">
+        <meta name="keywords" content="August,Ridemark,Stockholm,Sweden,CS,Computers,Science,Tech,Developer,Programmer,Coder">
+        <meta name="author" content="August Ridemark">
+
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <!-- Fontello stylesheet for Fontawesome icons -->
+        <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" media="screen">
+        <!-- Google Fonts and jQuery CDN -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Mobile menu script for small screens -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#nav-mobile").html($("#nav-main").html());
+                $("#nav-trigger span").click(function(){
+                    if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                    } else {
+                        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                    }
+                });
+            });
+        </script>
+                
+    </head>
+
+<body>
+
+<!-- Header with name and menu -->
+<header>
+    <a href="index.html"><div id="name"> AUGUST RIDEMARK </div></a>
+    
+</header>
+
+<!-- Main page content -->
+<div id="content">
+    <div id="lost-info">
+        <h1>If you are reading this you've probably found something I've lost</h1>
+        <p>Firstly, thank you for taking the time time to visit this link!</p>
+        <p>Secondly, if you have found something that belongs to me, please contact me through one of the ways listed below. I will be eternally grateful!</p><hr>
+        <h4>Contact me</h4>
+        <a href="mailto:august.ridemark@gmail.com">august.ridemark@gmail.com</a><br>
+        <a href="https://www.facebook.com/augustr">Facebook</a>
+        <p>Or fill out this form to easily notify me:</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe05Ws3mbFq4c7d5E9xDg6NPOkUYqSBXYMu5LgpFiI7ee3GSQ/viewform?embedded=true" width="960" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype hmtl>
+<html>
+
+	<head>
+        <title> August Ridemark - Projects </title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal website for August Ridemark">
+        <meta name="keywords" content="August,Ridemark,Stockholm,Sweden,CS,Computers,Science,Tech,Developer,Programmer,Coder">
+        <meta name="author" content="August Ridemark">
+
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <!-- Fontello stylesheet for Fontawesome icons -->
+        <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" media="screen">
+        <!-- Google Fonts and jQuery CDN -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Mobile menu script for small screens -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#nav-mobile").html($("#nav-main").html());
+                $("#nav-trigger span").click(function(){
+                    if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                    } else {
+                        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                    }
+                });
+            });
+        </script>
+                
+    </head>
+
+<body>
+<header>
+    <a href="index.html"><div id="name"> AUGUST RIDEMARK </div></a>
+    <nav id="nav-main">
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="">Projects</a></li>
+    </ul>
+    </nav>
+    <div id="nav-trigger">
+        <span><i class="material-icons">menu</i></span>
+    </div>
+    <nav id="nav-mobile"></nav>
+</header>
+
+<div id="content">
+   <div id="pagewrap">
+        
+    <section id="content-1">
+        <h2>1st Content Area</h2>
+        <p>This page demonstrates a 3 column responsive layout, complete with responsive images and jquery slideshow.</p>
+    </section>
+    
+    <section id="content-1">
+        <h2>2nd Content Area</h2>
+        <p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </section>
+
+    <aside id="content-1">
+        <h2>3rd Content Area</h2>
+        <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+    </aside>
+
+</div>
+
+    
+</div>
+</body>
+</html>
